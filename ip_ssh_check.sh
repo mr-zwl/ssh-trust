@@ -10,7 +10,7 @@ echo '######################################'
 
 for ip in $ip_list
 do
-	ssh root@$ip  hostname -f|cut -d'.' -f1 ; $@
+	ssh root@ $ip  $@
 done
 
  
