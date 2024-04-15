@@ -1,13 +1,14 @@
 # ssh-trust
 
 # 用于集群初始化之前的ssh互信
-# 适用于 centos 6.x 7.x 8.x 
+# 适用于linux下的ssh互信脚本
 
 ## 使用方法 ： 
 编辑设备IP清单 
-ip_list  文件中键入 需要做互信的IP （前提  IP可以ping 通 sshd服务正常运行且为默认端口22）
+ip_list  文件中键入 需要做互信的IP （前提  IP可以ping 通 sshd服务正常运行且为默认端口22，如端口不是22也可以修改脚本中指定的端口 但需要保证同一批IP使用端口和密码一致）
 
-执行
+执行deploy_control.sh 脚本部署密钥
+
 
 ## 互信分发完成后，执行 sh ip_ssh_check.sh脚本
 执行方式 ： sh ip_ssh_check.sh  command

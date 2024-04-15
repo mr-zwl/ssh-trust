@@ -12,11 +12,8 @@ echo '                1.创建key'
 echo '##################################################'
 
 # 生成密钥，检查是否有错误
-ssh-keygen -f ~/.ssh/id_rsa -P '' >/dev/null
-if [ $? -ne 0 ]; then
-    echo "创建密钥失败"
-    exit 1
-fi
+ssh-keygen -f ~/.ssh/id_rsa -P ''
+
 
 echo '###################################################'
 echo '                2.分发 pub key'
