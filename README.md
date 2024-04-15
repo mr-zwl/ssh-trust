@@ -7,9 +7,7 @@
 编辑设备IP清单 
 ip_list  文件中键入 需要做互信的IP （前提  IP可以ping 通 sshd服务正常运行且为默认端口22）
 
-## 编辑ip_ssh_fenfa.sh文件 
-### 根据注释修改ip_list中机器的密码
-执行方式 ： sh ip_ssh_fenfa.sh
+执行
 
 ## 互信分发完成后，执行 sh ip_ssh_check.sh脚本
 执行方式 ： sh ip_ssh_check.sh  command
